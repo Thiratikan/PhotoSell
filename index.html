@@ -23,6 +23,9 @@
         <li>
           <a href="./Home/Contractus.html">Contract Us</a>
         </li>
+        <li>
+          <button class="login-btn">Log In</button>
+        </li>
       </ul>
     </div>
 
@@ -35,6 +38,15 @@
 
     <div class="header">
       <div class="text">
+        <img
+          onmouseover="bigImg(this)"
+          onmouseout="normalImg(this)"
+          border="0"
+          src="img/welcome.png"
+          alt="Smiley"
+          width="100"
+          height="100"
+        />
         <h1>Buy Photos Starting from $0.50</h1>
 
         <div class="sub-text">
@@ -117,8 +129,44 @@
           <li><a href="#">Q&A</a></li>
           <li><a href="#">Refund</a></li>
           <li><a href="#">Costomer service</a></li>
+          <li><a href="photosell@photosell.com">Send Email</a></li>
         </ul>
       </div>
+      <div class="modal">
+        <div class="modal-box">
+          <div class="modal-body">
+            <h3>Log In</h3>
+            <form>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" />
+              </div>
+              <p><a href="#">Forgot your email or password</a></p>
+              <button class="btn btn-dark">Log In</button>
+            </form>
+          </div>
+
+          <img class="close" src="img/close.svg" alt="close" />
+        </div>
+      </div>
     </div>
+
+    <script>
+      function bigImg(x) {
+        x.style.height = "150px";
+        x.style.width = "150px";
+      }
+
+      function normalImg(x) {
+        x.style.height = "100px";
+        x.style.width = "100px";
+      }
+    </script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
